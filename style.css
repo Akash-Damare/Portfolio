@@ -10,6 +10,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: "Montserrat", sans-serif;
+  font-weight: 100;
 }
 
 header {
@@ -33,7 +34,7 @@ span {
   height: 100vh;
 }
 
-.wrapper {
+.title-wrapper {
   height: 100vh;
   /*This part is important for centering*/
   display: flex;
@@ -48,7 +49,37 @@ span {
   overflow: hidden;
   border-right: 3px solid;
   /* font-family: monospace; */
-  font-size: 2em;
+  font-size: 3rem;
+}
+
+.pic-wrapper {
+  background: linear-gradient(
+      to left top,
+      hsla(0, 0%, 0%, 0.2) 75%,
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    linear-gradient(
+      to right top,
+      hsla(0, 0%, 0%, 0.2) 75%,
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    linear-gradient(
+      to right bottom,
+      hsla(0, 0%, 0%, 0.2) 75%,
+      hsla(0, 0%, 0%, 0.75)
+    ),
+    linear-gradient(
+      to left bottom,
+      hsla(0, 0%, 0%, 0.2) 75%,
+      hsla(0, 0%, 0%, 0.75)
+    );
+  z-index: 2541999;
+}
+
+.hero-pic {
+  width: 100%;
+  opacity: 0.6;
+  filter: grayscale(100%);
 }
 
 @keyframes typing {
